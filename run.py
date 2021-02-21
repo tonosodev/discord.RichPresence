@@ -12,7 +12,7 @@ try:
     RPC.connect()
     print("#\nInjected!\n#")
     quotes_button_1 = ["Have a question?...", "Contact me!", "¸,ø¤º°`°º¤ø,¸ 𝕍𝕂 ¸,ø¤º°`°º¤ø,¸"]
-    quotes_button_2 = ["Join to Meta Peace Team®", "My Discord Server", "Yukki is waiting for you!"]
+    quotes_button_2 = ["GitHub"]
 
     quotes_details = [""]
     quotes_state = [""]
@@ -29,7 +29,7 @@ try:
             {
                 "label": random.choice(quotes_button_1), "url": "https://vk.com/devildesigner"},
             {
-                "label": random.choice(quotes_button_2), "url": "https://discord.gg/ZrfkCEAcfW"},
+                "label": random.choice(quotes_button_2), "url": "https://github.com/DevilDesigner"},
         ]
         mem_per = round(psutil.virtual_memory().percent, 1)
 
@@ -47,6 +47,23 @@ try:
             state="CPU: " + str(cpu_per) + "%")
         time.sleep(5)
         # print("Update Success!")
+        yukki_buttons_list = [
+            {
+                "label": "Join to Meta Peace Team®", "url": "https://discord.gg/VSAcZUX22a"},
+        ]
+        RPC.update(
+            large_text="Meta Peace Team®",
+            small_text="Yukki",
+
+            large_image='yukki_server_avatar_1024x1024',
+            small_image='yukki_512x512_image',
+
+            # party_size=[666, 666],
+            buttons=yukki_buttons_list,
+            details="☚ 𝕸𝖞 𝕯𝖎𝖘𝖈𝖔𝖗𝖉 𝕾𝖊𝖗𝖛𝖊𝖗",
+            state="⠀⠀ ⠀⠀𝕵𝖔𝖎𝖓 𝖚𝖘!"
+        )
+        time.sleep(5)
 
 except:
     print("Code exception.")
