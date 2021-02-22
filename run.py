@@ -48,22 +48,39 @@ try:
                 state="⠀⠀⠀⠀⠀𝕄𝕒𝕟𝕒☆"
             )
             time.sleep(7)
+            try:
+                RPC.update(
+                    # start=int(time.time()),
+                    large_text=random.choice(quotes_large_text),
+                    small_text=random.choice(quotes_small_text),
 
-            RPC.update(
-                # start=int(time.time()),
-                large_text=random.choice(quotes_large_text),
-                small_text=random.choice(quotes_small_text),
+                    large_image=random.choice(quotes_large_image),
+                    small_image="profile_image",
 
-                large_image=random.choice(quotes_large_image),
-                small_image="profile_image",
+                    # party_size=[666, 666],
+                    buttons=buttons_list,
+                    details="Current Activity:",
+                    state=GetWindowText(GetForegroundWindow())
+                )
+                time.sleep(7)
+                # print("Update Success!")
+            except:
+                print("GetForegroundWindow Exception inspected!/nPassing. . . ")
+                RPC.update(
+                    # start=int(time.time()),
+                    large_text=random.choice(quotes_large_text),
+                    small_text=random.choice(quotes_small_text),
 
-                # party_size=[666, 666],
-                buttons=buttons_list,
-                details="Current Activity:",
-                state=GetWindowText(GetForegroundWindow())
-            )
-            time.sleep(7)
-            # print("Update Success!")
+                    large_image=random.choice(quotes_large_image),
+                    small_image="profile_image",
+
+                    # party_size=[666, 666],
+                    buttons=buttons_list,
+                    details="Current Activity:",
+                    state="Coffee Time ☕"
+                )
+                time.sleep(7)
+                # print("Update Success!")
 
             yukki_buttons_list = [
                 {
