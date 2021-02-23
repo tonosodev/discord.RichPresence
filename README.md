@@ -19,7 +19,7 @@ v1.1.6 | Release
 # How to add this to startup?... 
 - Get Python 3.8 or newer
 - Download archive with files: run.py, config.py and logo.yml;
-- Contain all in a new folder;
+- Contain all files in a folder;
 - Change 'run.py' to 'run.pyw' and open it with 'pythonw.exe';
 - Execute Win + R combination and enter -> shell:startup;
 - Add shortcut to run.pyw
