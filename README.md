@@ -14,6 +14,10 @@
 - Added discord disconnect protection system;
 - Added self-connection system in case of error
 
+<p align="center">
+    <img src="https://sun9-31.userapi.com/impg/zzjaA1jlIZXwaBn2EkN8-oZw_y0s6Npzc-KEBw/tPgtQ5WH3-g.jpg?size=246x329&quality=96&proxy=1&sign=e0933e7a01963ef8d4c7335f199868e5&type=album">
+</p>
+
 # Libraries
 - pypresence
 - pyautogui
