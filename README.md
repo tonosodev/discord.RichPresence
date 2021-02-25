@@ -13,6 +13,12 @@
 <img src="https://camo.githubusercontent.com/9a818fdfec2b3aed096327facc82b25dad443248406192af72d184ebb89a2d49/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6173742d636f6d6d69742f7177657274797175657274792f707970726573656e63652e7376673f7374796c653d666f722d7468652d6261646765">
 </p>
 
+# Libraries
+```
+- pypresence
+- pyautogui
+```
+
 # Last Update:
 ```
 - Added scrolling of activity layers;
@@ -21,11 +27,11 @@
 - Added self-connection system in case of error
 ```
 
-# Libraries
+# Fixes
 ```
-- pypresence
-- pyautogui
+- [2/25/2021] Added time display for correct work of layers
 ```
+
 # How to add this to startup?... 
 ```python
 - Get Python 3.8 or newer
