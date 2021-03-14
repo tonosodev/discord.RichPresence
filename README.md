@@ -35,9 +35,9 @@
 # How to add this to startup?... 
 ```python
 - Get Python 3.8 or newer
-- Download archive with files: run.py, config.py and logo.yml;
+- Download archive with files: run.pyw, config.py and logo.yml;
 - Contain all files in a folder;
-- Change 'run.py' to 'run.pyw' and open it with 'pythonw.exe';
+- Open "run.pyw" with 'pythonw.exe';
 - Execute Win + R combination and enter -> shell:startup;
-- Add shortcut to run.pyw
+- Add shortcut to run.pyw in startup
 ```
