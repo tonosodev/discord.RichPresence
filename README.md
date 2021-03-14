@@ -1,5 +1,5 @@
 # 𝔻𝕚𝕤𝕔𝕠𝕣𝕕 𝔸𝕔𝕥𝕚𝕧𝕚𝕥𝕪 𝕊𝕥𝕒𝕥𝕦𝕤
-`Custom status using PyPresence`
+`Custom status with layer-system using PyPresence`
 
 <p></p>
 
