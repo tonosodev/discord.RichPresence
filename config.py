@@ -1,5 +1,5 @@
 general_settings = {
-    "client_id": "812385187240738837",
-    "next_layer_time": 10,
-    "loading_time": 5,
+    "client_id": "xxxxxxxxxxxxxxxxxxx",   # Our Discord Bot clientID
+    "next_layer_time": 10,                # Active layer time
+    "loading_time": 5,                    # Re-loading connection time, if Discord don't runned or Ethernet connection dropped
 }
