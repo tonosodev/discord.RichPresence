@@ -12,14 +12,12 @@ import pyautogui
 # Remove this statement if you don't need it. 
 
 try:
-    logo = open("logo.yml", "r", encoding="utf8")
-    data = logo.read()
-    print(data)
-    logo.close()
+    with open("logo.yml", "r", encoding="utf8") as logo:
+        data = logo.read()
+        print(data)
 except IOError:
     print("Error reading logo image from file: " + logo.name)
 finally:
-    logo.close()
 print("\nInjecting. . .\n################################")
 
 # =========================================================== #
