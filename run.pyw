@@ -121,7 +121,9 @@ while True:
                         #
                 except Exception as e:
                     print("[EXCEPTION] " + repr(e))
-                    print("U understand what the fuck is that?\nI'm too...\nSkip it.\n")
+                    print("U understand what the fuck is that?\nI'm too...\n
+                    Skip it.\n
+                    ")
                     # pyautogui.alert(repr(e))
 
                     #
@@ -174,8 +176,12 @@ while True:
     #
     except Exception as e:
         print(
-            "CAPTAIN, ERROR!\nOh, sorry, not an error...\nor...\nOMG, DISCORD NOT RUNNED!\nRetry connecting via " + str(
-                general_settings['loading_time']) + " seconds...\n. . . ")
+            "CAPTAIN, ERROR!\n
+            Oh, sorry, not an error...\n
+            or...\n
+            OMG, DISCORD NOT RUNNED!\n
+            Retry connecting via " + str(general_settings['loading_time']) + " seconds...\n
+            . . . ")
         time.sleep(general_settings['loading_time'])
         try:
             RPC = Presence(client_id)  # Initialize the Presence class
