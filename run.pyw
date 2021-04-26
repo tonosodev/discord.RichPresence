@@ -176,11 +176,8 @@ while True:
     #
     except Exception as e:
         print(
-            "CAPTAIN, ERROR!\n
-            Oh, sorry, not an error...\n
-            or...\n
-            OMG, DISCORD NOT RUNNED!\n
-            Retry connecting via " + str(general_settings['loading_time']) + " seconds...\n
+            "Discord connection error!\n
+            Retry via " + str(general_settings['loading_time']) + " seconds...\n
             . . . ")
         time.sleep(general_settings['loading_time'])
         try:
