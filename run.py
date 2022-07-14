@@ -15,7 +15,7 @@ import configparser
 try:
     # Logo Initialize
     try:
-        with open("logo.yml", "r", encoding="utf8") as logo:
+        with open("/Users/mindcontrol/Documents/GitHub Projects/discord.RichPresence/logo.yml", "r", encoding="utf8") as logo:
             data = logo.read()
             print(data)
     except FileNotFoundError:
