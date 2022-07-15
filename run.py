@@ -86,6 +86,7 @@ while True:
             try:
                 RPC = Presence(client_id)  # Initialize the Presence class
                 RPC.connect()
+                print("Prescense connected successfully!")
             except TimeoutError:
                 print("Token error!")
 
@@ -110,9 +111,6 @@ while True:
             try:
                 buttons_list = [
                     {
-                        "label": random.choice(code_button_1_text),
-                        "url": random.choice(code_button_1_url)},
-                    {
                         "label": random.choice(code_button_2_text),
                         "url": random.choice(code_button_2_url)}
                 ]
@@ -127,50 +125,24 @@ while True:
                     state="And everything you were..."
                 )
                 time.sleep(int(settings["GeneralSettings"]["next_layer_time"]))
-                try:
-                    current = pyautogui.getActiveWindowTitle()
-                    activity_details = ""
-                    last = None
-                    #for browsers in range(len(web_browsers)):
-                    #    if str(web_browsers) in current:
-                    #        activity_details = "Web-Surfing:"
-                    if "Discord" in current:
-                        activity_details = "In Discord | Watching:"
-                    else:
-                        activity_details = "Current Activity:"
-                    if len(current) >= 128:
-                        continue
-                    if current != last:
-                        RPC.update(
-                            start=start_time,
-                            large_text=random.choice(quotes_large_image_text),
-                            small_text=random.choice(quotes_small_image_text),
-                            large_image=random.choice(quotes_large_image),
-                            small_image=random.choice(code_quotes_small_image),
-                            # party_size=[666, 666],
-                            buttons=buttons_list,
-                            details=activity_details,
-                            state=f"{str(current)}",
-                            instance=False
-                        )
-                        time.sleep(int(settings["GeneralSettings"]["next_layer_time"]))
-                except Exception as e:
-                    print("[EXCEPTION] " + repr(e))
-                    print("Window layer error.")
-                    #
-                    # Activity Layer WindowERROR
-                    #
-                    RPC.update(
-                        start=start_time,
-                        large_text=random.choice(window_error_large_text),
-                        small_text=random.choice(quotes_small_image_text),
-                        large_image=random.choice(window_error_large_image),
-                        small_image="profile_image",
-                        # party_size=[666, 666],
-                        buttons=buttons_list,
-                        details="Coffee Time ☕",
-                        state="Do not disturb!"
-                    )
+
+                l2_buttons_list = [
+                    {
+                        "label": random.choice(code_button_1_text),
+                        "url": random.choice(code_button_1_url)
+                    },
+                ]
+                RPC.update(
+                    # start=start_time,
+                    large_text="GitHub",
+                    small_text="GitHub",
+                    large_image='cat2_1024x1024',
+                    small_image='cat2_1024x1024',
+                    # party_size=[666, 666],
+                    buttons=l2_buttons_list,
+                    details="Contact me in",
+                    state="⠀⠀GitHub!!"
+                )
                 time.sleep(int(settings["GeneralSettings"]["next_layer_time"]))
                 #
                 # Activity Layer #3
@@ -184,7 +156,7 @@ while True:
                 RPC.update(
                     # start=start_time,
                     large_text="𝓜𝓮𝓽𝓪  𝓟𝓮𝓪𝓬𝓮  𝓣𝓮𝓪𝓶®",
-                    small_text="𝓨𝓾𝓴𝓴𝓲 - Developer's Bot",
+                    small_text="𝓨𝓾𝓴𝓴𝓲 - My Discord Bot",
                     large_image='yukki_server_avatar_1024x1024',
                     small_image='yukki_512x512_image',
                     # party_size=[666, 666],
@@ -204,7 +176,7 @@ while True:
     #
     except Exception as e:
         print(
-            "Discord process error!\n"
+            "***(is the discord running?)***\n"
             "Retry connecting via " +
             str(settings["GeneralSettings"]["reloading_after_exception_time"])
             + " seconds...\n"
