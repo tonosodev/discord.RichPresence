@@ -7,19 +7,22 @@ This Class: RichPresence
 
 from pypresence import Presence
 
-import random
-import time
-import pyautogui
-import configparser
+# import random
+# import time
+# import pyautogui
+# import configparser
 
 try:
     # Logo Initialize
-    try:
-        with open("/Users/mindcontrol/Documents/GitHub Projects/discord.RichPresence/logo.yml", "r", encoding="utf8") as logo:
-            data = logo.read()
-            print(data)
-    except FileNotFoundError:
-        print("\033[33m{}".format("Logo file not found!\nSkipped."))
+    print("""   _     _
+  (c).-.(c)
+   / ._. \
+ __\( Y )/__            𝔻𝕚𝕤𝕔𝕠𝕣𝕕 𝔸𝕔𝕥𝕚𝕧𝕚𝕥𝕪 𝕊𝕥𝕒𝕥𝕦𝕤 ℙ𝕣𝕠𝕛𝕖𝕔𝕥
+(_.-/'-'\-._)                    v.2.0.0
+    |DDP|                by  vk.com/DevilDesigner
+ _.' `-' '._             github.com/DevilDesigner
+(.-./`-'\.-.)
+ `-'     `-'""")
     # Settings file Initialize
     try:
         with open("settings.ini") as con:
