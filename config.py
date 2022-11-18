@@ -1,6 +1,17 @@
-# Layers configuration
-# You can use <["text1", "text2", "..."]> structure for randomize activity status or <["text"]> structure for single text!
+# Сonfiguration
 # Contact me (https://vk.com/devildesigner) if you have some troubles.
+
+# Get in https://discord.com/developers/applications/
+# Create and select your application, after copy APPLICATION ID in "General Information".
+application_id = 0
+
+# General Status settings.
+# Edit if you need:
+
+reloading_after_exception_time = 10
+next_layer_time = 10
+
+# You can use <["text1", "text2", "..."]> structure for randomize activity status or <["text"]> structure for single text!
 
 # Buttons
 first_button_layer_1_text = ["GitHub"]

@@ -13,38 +13,30 @@
 </p>
 
 # Libraries
-```
 - pypresence
-- pyautogui
-```
+- colorama
 
 # Last Update:
-```
 - Added scrolling of activity layers;
 - Added displaying the current user activity;
 - Added discord disconnect protection system;
 - Added self-connection system in case of error
 - Added auto-config generating
-```
 
 # Fixes
-```
 - [2/25/2021] Added time display for correct work of layers
 - [7/4/2021] Some changes and code cleanup
-```
+
 # How to setup?...
 - Download archive, unzip and start 'run.py' file
-- Edit settings.ini file in NotePad++ or other code editor
-- Edit config.py file also. Don't forget about images name. You need to download your images to application in developer portal.
-- If you need to full changes - edit run.py file or contact with me
+- Edit config.py file in NotePad++ or other code editor. Don't forget about images names. You need to upload your images to application in developer portal.
+- If you need to full changes - edit run.py file or contact with me.
 
 # How to add this to startup?... 
-```python
 - Get Python 3.8 or newer
-- Get pypresence library (powershell >> pip install pypresence)
-- Download archive with: run.pyw and logo.yml;
-- Contain all files in folder;
-- Rename 'run.py' to 'run.pyw' file and open with 'pythonw.exe';
+- Install libraries (powershell >> `pip install pypresence colorama`)
+- Download archive with: `run.py`;
+- Unzip all files to any folder;
+- Rename `run.py` to `run.pyw` file and open with `pythonw.exe`;
 - Execute Win + R combination and enter -> shell:startup;
 - Add shortcut to run.pyw
-```
